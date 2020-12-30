@@ -1,4 +1,4 @@
-public class ReturnMax {
+public class ReturnMaxExtension {
     /** Returns the maximum value from m. */
     public static void max(int[] m) {
        int maximun = 0;

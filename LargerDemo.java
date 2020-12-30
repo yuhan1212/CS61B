@@ -1,5 +1,6 @@
 public class LargerDemo {
-
+	/** Returns the larger of x and y. 
+		@precondition */
 	public static int larger(int x, int y) {
 		// must assign type to variables and fuction return type
 		if (x > y) {
@@ -21,4 +22,7 @@ public class LargerDemo {
 2. To define a function in Java, we use "public static".
 3. All parameters of a function must have a declared type,
 	and the return value of the function must have a declared type.
+	Fuction in Java return only one value!
 */
+
+
