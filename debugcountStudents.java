@@ -1,10 +1,31 @@
-import java.util.List;
-import java.util.Arrays;
-import java.util.Scanner;
-
 class debugcountStudents {
     public static int countStudents(int[] students, int[] sandwiches) {
         System.out.println("======================== in countStudents ========================");
+
+        
+        List<Integer> stu = new ArrayList<Integer>();
+        List<Integer> sand = new ArrayList<Integer>();
+        int l = students.length;
+        for (int i = 0; i < students.length; i++) {
+            stu.add(students[i]);
+        }
+        for (int i = 0; i < sandwiches.length; i++) {
+            stu.add(sandwiches[i]);
+        }
+
+        System.out.println(" ####### ");           
+        System.out.println("sandwiches[0] = " + sandwiches[0]);
+        System.out.println("sandwiches[0] = " + sandwiches[0]);
+        
+        while (sand.size() > 0) {
+            for (int i = 0; i < l; i++) {
+                if (stu.get(i) == sand.get(0)) {
+                    stu.remove(i);
+                    l -= 1;
+                }
+            }
+            sand.remove(0);                   
+        }
 
         while (sandwiches[0] == 1) or (sandwiches[0] == 0); {
             System.out.println(" ####### ");           
