@@ -1,5 +1,4 @@
-/** An SLList is a list of integers, which hides the terrible truth 
-  * of the nakedness within. */
+/** Representing the Empty List Using a Sentinel. */
 
 public class SLList2 {
     
