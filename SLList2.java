@@ -4,35 +4,31 @@
 public class SLList2 {
     
     /* The first item (if exists is at sentinel.next) */
-    private IntNode first;
+    private IntNode sentinel;
     private int size;
 
     /** Create an empty SLList. */
-    public SLList() {
-        first = null;
+    public SLList2() {
+        sentinel = new IntNode(-1, null);
         size = 0;
     }
     
-    public SLList(int x) {
-        first = new IntNode(x, null);
+    public SLList2(int x) {
+        sentinel.next = new IntNode(x, null);
         size = 1;
     }
 
     /**  Add x to the front of the list. */
     public void addFirst(int x) {
-        first = new IntNode(x, first);
+        sentinel.next = new IntNode(x, sentinel.next);
         size += 1;
     }
 
     /** Add an item to the end of the list. */
     public void addLast (int x) {
         size += 1;
-        if (first == null) {
-            first = new IntNode(x, null);
-            return;
-        } 
         
-        IntNode p = first;
+        IntNode p = sentinel.next;
 
         /* Move p until it reaches the end of the list. */
         while (p.next != null) {
@@ -43,12 +39,12 @@ public class SLList2 {
 
     /** Return the first item in the list. */
     public int getFirst() {
-        return first.item;
+        return sentinel.next.item;
     }
 
     /** Return the last item in the list. */
     public int getLast() {
-        IntNode p = first;
+        IntNode p = sentinel.next;
     
         while (p.next != null) {
             p = p.next;
@@ -59,7 +55,7 @@ public class SLList2 {
     /** Print all int in SLList. */
     public String printSLList() {
         String res = "";
-        IntNode p = first;
+        IntNode p = sentinel.next;
         while (p.next != null) {
             res += p.item;
             res += "-";
@@ -71,7 +67,7 @@ public class SLList2 {
 
     /** My way to get the size of the list. */
     public int getSize() {
-        IntNode p = first;
+        IntNode p = sentinel.next;
         int size = 0;
         while (p.next != null) {
             size += 1;
@@ -91,7 +87,7 @@ public class SLList2 {
     }
     
     public int size() {
-        return size(first);
+        return size(sentinel.next);
     }
 
     public int fastGetSize() {
