@@ -71,8 +71,8 @@ public class SLList2 {
         S.addLast(20);
         S.addFirst(10);
         S.addFirst(5);
-        System.out.println("The first integer in L is: " + S.getFirst());
-        System.out.println("The last integer in L is: " + S.getLast());
+        System.out.println("The first integer in S is: " + S.getFirst());
+        System.out.println("The last integer in S is: " + S.getLast());
         System.out.println("fastest way to get size: " + S.size());
     }
 
