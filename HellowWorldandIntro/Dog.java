@@ -33,18 +33,15 @@ public class Dog {
 
 
 public class DogLauncher {
-	/** DogLauncher should run with Dog in which contains Dog class and methods
-	*/
+	 /**  DogLauncher should run with Dog in which contains Dog class and methods */
+
 	public static void main(String[] args) {
 		Dog d1 = new Dog(20);
 		Dog d2 = new Dog(50);
 		
 		Dog.returnBiggerDog(d1, d2);
-
-
-
-
 	}
+	
 }
 
 
