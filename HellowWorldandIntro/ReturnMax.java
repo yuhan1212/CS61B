@@ -13,10 +13,10 @@ public class ReturnMax {
     }
 
     public static void main(String[] args) {
-       int[] numbers = new int[]{9, 2, 15, 2, 22, 10, 6};  
+      int[] numbers = new int[]{9, 2, 15, 2, 22, 10, 6};  
 	   max(numbers);
 
-       int[] numbers_2 = new int[]{9, 2, 15, 2, 22, 10, 65};  
+      int[] numbers_2 = new int[]{9, 2, 15, 2, 22, 10, 65};  
 	   max(numbers_2);
 
 	   int[] numbers_3 = new int[]{90, 2, 15, 2, 22, 10, 65};  
